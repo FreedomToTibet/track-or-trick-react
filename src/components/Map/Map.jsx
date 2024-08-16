@@ -1,4 +1,4 @@
-// import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 // import {
 //   MapContainer,
 //   TileLayer,
@@ -16,6 +16,7 @@ import styles from "./Map.module.css";
 // import Button from "./Button";
 
 const Map = () => {
+	const navigate = useNavigate();
   // const { cities } = useCities();
   // const [mapPosition, setMapPosition] = useState([40, 0]);
   // const {
@@ -41,7 +42,7 @@ const Map = () => {
   // );
 
   return (
-    <div className={styles.mapContainer}>
+    <div className={styles.mapContainer} onClick={() => navigate("form")}>
 			<h1>Map</h1>
   {/* //     {!geolocationPosition && (
   //       <Button type="position" onClick={getPosition}>

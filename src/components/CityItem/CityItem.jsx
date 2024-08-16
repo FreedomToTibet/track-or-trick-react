@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { useCities } from "../contexts/CitiesContext";
 import styles from "./CityItem.module.css";
 
@@ -37,14 +37,18 @@ const CityItem = ({ city }) => {
   // );
 
 	return (
-		<li className={styles.cityItem}>
-			<span className={styles.emoji}>{emoji}</span>
-			<h3 className={styles.name}>{cityName}</h3>
-			<time className={styles.date}>({formatDate(date)})</time>
-			<button className={styles.deleteBtn} >
-           &times;
-      </button>
-		</li>
+		
+			<li>
+				<Link className={styles.cityItem} to={`${id}`}>
+				<span className={styles.emoji}>{emoji}</span>
+				<h3 className={styles.name}>{cityName}</h3>
+				<time className={styles.date}>({formatDate(date)})</time>
+				<button className={styles.deleteBtn} >
+						&times;
+				</button>
+				</Link>
+			</li>
+		
 	);
 }
 

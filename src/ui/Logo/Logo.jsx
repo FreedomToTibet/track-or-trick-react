@@ -4,7 +4,7 @@ import styles from "./Logo.module.css";
 const Logo = () =>{
   return (
     <Link to="/">
-      <img src="./logo.png" alt="Track-Or-Trick logo" className={styles.logo} />
+      <img src="/logo.png" alt="Track-Or-Trick logo" className={styles.logo} />
     </Link>
   );
 }
