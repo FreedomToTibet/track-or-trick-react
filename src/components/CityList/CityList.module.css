@@ -13,3 +13,7 @@
 .cityList::-webkit-scrollbar {
   width: 0;
 }
+
+.cityList::-webkit-scrollbar-thumb {
+	display: none;
+}

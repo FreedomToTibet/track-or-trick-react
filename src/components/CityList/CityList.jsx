@@ -1,5 +1,5 @@
 // import Message from "./Message";
-import { useCities } from "../context/CitiesContext";
+import { useCities } from "../../context/CitiesContext";
 
 import CityItem from "../CityItem/CityItem";
 

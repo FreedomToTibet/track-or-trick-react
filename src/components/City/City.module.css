@@ -11,6 +11,14 @@
   gap: 2rem;
 }
 
+.city::-webkit-scrollbar {
+  width: 0;
+}
+
+.city::-webkit-scrollbar-thumb {
+	display: none;
+}
+
 .row {
   display: flex;
   flex-direction: column;
