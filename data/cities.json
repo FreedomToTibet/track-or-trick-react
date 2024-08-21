@@ -10,7 +10,7 @@
         "lat": 38.727881642324164,
         "lng": -9.140900099907554
       },
-      "id": 73930385
+      "id": "73930385"
     },
     {
       "cityName": "Madrid",
@@ -22,7 +22,7 @@
         "lat": 40.46635901755316,
         "lng": -3.7133789062500004
       },
-      "id": 17806751
+      "id": "17806751"
     },
     {
       "cityName": "Berlin",
@@ -34,7 +34,67 @@
         "lat": 52.53586782505711,
         "lng": 13.376933665713324
       },
-      "id": 98443197
+      "id": "98443197"
+    },
+    {
+      "id": "ccee",
+      "cityName": "Portland",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-08-21T08:20:51.121Z",
+      "notes": "test",
+      "position": {
+        "lat": "45.42688928030795",
+        "lng": "-122.772216796875"
+      }
+    },
+    {
+      "id": "e47a",
+      "cityName": "Beaverton",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-08-31T08:25:19.000Z",
+      "notes": "test",
+      "position": {
+        "lat": "45.31787464828503",
+        "lng": "-122.8649139404297"
+      }
+    },
+    {
+      "id": "3cc5",
+      "cityName": "Woodburn",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-07-28T08:29:21.000Z",
+      "notes": "rrr",
+      "position": {
+        "lat": "45.142457180547",
+        "lng": "-122.85581588745119"
+      }
+    },
+    {
+      "id": "4a5e",
+      "cityName": "In Ghar",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2024-02-05T09:38:03.000Z",
+      "notes": "rrrr",
+      "position": {
+        "lat": "27.089695796963632",
+        "lng": "1.9226074218750002"
+      }
+    },
+    {
+      "id": "ab05",
+      "cityName": "In Ghar",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2024-08-21T08:39:03.293Z",
+      "notes": "",
+      "position": {
+        "lat": "27.089695796963632",
+        "lng": "1.9226074218750002"
+      }
     }
   ]
 }
