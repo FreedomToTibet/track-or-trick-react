@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 
 import {CitiesProvider} from './context/CitiesContext';
+import {AuthProvider} from './context/FakeAuthContext';
 
 import Product from './pages/Product/Product';
 import Home from './pages/Home/Home';
@@ -16,6 +17,7 @@ import Form from './components/Form/Form';
 
 const App = () => {
   return (
+		<AuthProvider>
     <CitiesProvider>
       <Router>
         <Routes>
@@ -34,6 +36,7 @@ const App = () => {
         </Routes>
       </Router>
     </CitiesProvider>
+		</AuthProvider>
   );
 };
 export default App;

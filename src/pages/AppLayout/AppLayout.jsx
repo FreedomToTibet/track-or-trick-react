@@ -1,6 +1,6 @@
 import Map from "../../components/Map/Map";
 import Sidebar from "../../components/Sidebar/Sidebar";
-// import User from "../components/User";
+import User from "../../components/User/User";
 
 import styles from "./AppLayout.module.css";
 
@@ -9,7 +9,7 @@ const AppLayout = () => {
     <div className={styles.app}>
       <Sidebar />
       <Map />
-      {/* <User /> */}
+      <User />
     </div>
   );
 }

@@ -1,36 +1,38 @@
-// import { useEffect, useState } from "react";
-// import { useNavigate } from "react-router-dom";
-// import Button from "../components/Button";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import PageNav from "../../components/PageNav/PageNav";
-// import { useAuth } from "../contexts/FakeAuthContext";
+
+import { useAuth } from "../../context/FakeAuthContext";
+
+import Button from "../../ui/Button/Button";
 import styles from "./Login.module.css";
 
 const Login = () => {
-  // PRE-FILL FOR DEV PURPOSES
-  // const [email, setEmail] = useState("jack@example.com");
-  // const [password, setPassword] = useState("qwerty");
+  // fake login for development
+  const [email, setEmail] = useState("jack@example.com");
+  const [password, setPassword] = useState("qwerty");
 
-  // const { login, isAuthenticated } = useAuth();
-  // const navigate = useNavigate();
+  const { login, isAuthenticated } = useAuth();
+  const navigate = useNavigate();
 
-  // function handleSubmit(e) {
-  //   e.preventDefault();
+  function handleSubmit(e) {
+    e.preventDefault();
 
-  //   if (email && password) login(email, password);
-  // }
+    if (email && password) login(email, password);
+  }
 
-  // useEffect(
-  //   function () {
-  //     if (isAuthenticated) navigate("/app", { replace: true });
-  //   },
-  //   [isAuthenticated, navigate]
-  // );
+  useEffect(
+    function() {
+      if (isAuthenticated) navigate("/app", { replace: true });
+    }, [isAuthenticated, navigate]
+  );
 
   return (
     <main className={styles.login}>
       <PageNav />
 
-      {/* <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.row}>
           <label htmlFor="email">Email address</label>
           <input
@@ -54,7 +56,7 @@ const Login = () => {
         <div>
           <Button type="primary">Login</Button>
         </div>
-      </form> */}
+      </form>
     </main>
   );
 }
