@@ -1,4 +1,4 @@
-// import Message from "./Message";
+import { compareAsc } from "date-fns";
 import { useCities } from "../../context/CitiesContext";
 
 import CityItem from "../CityItem/CityItem";
@@ -19,9 +19,11 @@ const CityList = () => {
       <Message message="Add your first city by clicking on a city on the map" />
     );
 
+		const sortedCities = cities.sort((a, b) => compareAsc(new Date(a.date), new Date(b.date)));
+
   return (
     <ul className={styles.cityList}>
-		  {cities.map((city) => (
+		  {sortedCities.map((city) => (
         <CityItem city={city} key={city.id} />
       ))}
     </ul>

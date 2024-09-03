@@ -1,6 +1,6 @@
 import {createContext, useReducer, useEffect, useContext} from 'react';
 
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://66d7958637b1cadd8051e011.mockapi.io/route/api/';
 
 const CitiesContext = createContext();
 
