@@ -1,8 +1,20 @@
-# React + Vite
+## Welcome to our trip tracker SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Here you can:
+- add to the list the point on the map you visited and add note about it;
+- remove items from the list;
+- see a list of countries you have visited;
+- see a list of all the cities you have visited, in ascending date order.
 
-Currently, two official plugins are available:
+This Single Page Application (SPA) uses MockApi.io as a database. All changes are saved there.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies used in development:
+
+- React JS v18;
+- Hooks (useState,useEffect...);
+- Context + useReducer;
+- React Router v6;
+- maps Leaflet;
+- Datepicker;
+- css modules.
+
